@@ -24,10 +24,24 @@ html
 		font-size: em(30)
 		color: #111111
 		letter-spacing: 1.2px
+		margin-bottom: rem(23)
 		
 	p 
 		font-family:  PlayfairDisplay
 		color: #666666
+=des-b()
+	border-left: 2px solid #e8bf5d
+	padding-left: rem(20)
+	h2 
+		font-size: em(30)
+		color: #ffffff
+		letter-spacing: 1.2px
+		margin-bottom: rem(23)
+		
+	p 
+		font-family:  PlayfairDisplay
+		color: #b9b9b9
+
 
 .wrap
 	max-width: 1100px
@@ -148,31 +162,45 @@ fuel is cheaper
 
 
 .about_us
+	padding-top: rem(99)
+	margin-bottom: rem(102)
+	box-sizing: border-box
 	&__text
 		+clearfix
 		margin: 0  rem(-20)
 	&__description
 		+des
+		margin-bottom: rem(50)
 	&__history
 		+boxW(12,6)
 		padding: 0 rem(20)
 		float: left
 		box-sizing: border-box
+		div
+			+clearfix
 		h3
 			font-family: $font_1
 			font-size: em(21)
 			color: #111111
+			margin-bottom: rem(35)
 		span
+			+boxW(12,2)
+
+			display: block
 			font-size: em(21)
 			color: #111111
 			font-family: $font_2
 			font-weight: bold
+			float: left
 		p
+			+boxW(12,10)
 			font-family: $font_2
+			float: right
 			font-size: em(16)
 			color: #111111
-			margin-left: rem(47)
-			display: inline
+			display: block
+			box-sizing: border-box
+			padding-left: rem(37)
 			text-align: justify
 	&__expertise
 		+boxW(12,6)
@@ -183,8 +211,97 @@ fuel is cheaper
 			font-family: $font_1
 			font-size: em(21)
 			color: #111111
+			margin-bottom: rem(35)
 		p
 			font-family: $font_2
 			font-size: em(14)
 			color: #666666
 			text-align: justify
+.practis_area
+	padding-top: rem(100)
+	padding-bottom: rem(100)
+	background-color: #111111
+	color: white
+	&__description
+		margin-bottom: rem(103-68)
+		+des-b
+	&__items
+		+clearfix
+		margin: 0 rem(-32)
+	&__item
+		margin-top: rem(68)
+		float: left
+		+clearfix
+		+boxW(12,6)
+		box-sizing: border-box
+		padding: 0 rem(32)
+		&> div:first-child
+			+boxW(12,2)
+			width: rem(58)
+			height: rem(58)
+			float: left
+			background-color: #fff
+			box-sizing: border-box
+		&>div:last-child
+			padding-left: rem(38)
+			+boxW(12,10)
+			float: left
+			box-sizing: border-box
+			h3
+				margin-bottom: rem(32)
+				font-size: em(21)
+				color: #ffffff
+				font-family: $font_1
+
+			p
+				font-size: em(14)
+				font-family: $font_2
+				line-height: 2
+
+
+
+.meet_our_attorney
+	padding: rem(100) 0
+	&__description
+		margin-bottom: rem(50)
+		+des
+	&__items
+		+clearfix
+		margin: 0 rem(-15)
+	&__item
+		float: left
+		box-sizing: border-box
+		padding: 0 rem(15)
+		+boxW(12,3)
+		img
+			width: 100%
+		h3
+			color: #111111
+			font-size: em(21)
+			line-height: 1.48
+			font-family: $font_1
+		p
+			color: #666666
+			font-family: $font_2
+			letter-spacing: 0.6px
+
+
+.our_clients_say
+	padding: rem(100) 0
+	&__description
+		margin-bottom: rem(50)
+		+des
+	&__tems
+		+clearfix
+		margin: 0 rem(-15)
+.client_say_item
+	float: left
+	box-sizing: border-box
+	padding: 0 rem(15)
+	+boxW(12,4)
+	img 
+		width: 100%
+
+
+
+
