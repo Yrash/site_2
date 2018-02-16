@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px; }
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative; }
+  .wrap:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.header__top_bar {
+  height: 6.875rem; }
+  .header__top_bar:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.header__logo {
+  width: 25%;
+  float: left;
+  position: relative;
+  top: 2.5rem;
+  text-transform: uppercase; }
+
+.header__nav {
+  width: 75%;
+  float: left; }
+
+nav {
+  position: relative;
+  top: 2.5rem; }
+  nav ul {
+    list-style: none; }
+    nav ul:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    nav ul li {
+      width: 16.66667%;
+      float: left;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 0; }
+      nav ul li a {
+        text-decoration: none;
+        font-family: OpenSans;
+        font-size: 0.875em;
+        color: #111111;
+        text-transform: uppercase;
+        height: 1.875rem;
+        display: inline-block; }
+        nav ul li a:hover {
+          text-decoration: none;
+          border-bottom: 5px solid #e8bf5d; }
+
+.section_title .wrap {
+  height: 90vh; }
+
+.section_title {
+  background: url(./src/recent-publications/stock-photo-177211577.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  position: relative; }
+  .section_title:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(2, 3, 0, 0.7), rgba(2, 3, 0, 0.1));
+    z-index: 10;
+    display: table;
+    clear: both; }
+  .section_title__text {
+    position: absolute;
+    bottom: 8.8125rem;
+    padding-left: 1rem;
+    border-left: 2px solid  #e8bf5d;
+    box-sizing: border-box;
+    z-index: 12; }
+    .section_title__text h1 {
+      font-size: 4.0625em;
+      color: white;
+      font-family: PlayfairDisplay; }
+    .section_title__text span {
+      font-size: 1.9375em;
+      font-family: OpenSans;
+      color: white; }
+  .section_title__button {
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    z-index: 30;
+    bottom: 10.1875rem; }
+    .section_title__button button {
+      width: 11.3125rem;
+      height: 3.125rem;
+      border-radius: 1.5625rem;
+      background-color: #e8bf5d;
+      border: none;
+      color: #111;
+      font-family: PlayfairDisplay;
+      font-size: 1em;
+      text-transform: uppercase;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1); }
+      .section_title__button button:hover {
+        transform: scale(1.1); }
+      .section_title__button button:focus {
+        outline: none; }
+
+.about_us__text {
+  margin: 0 -1.25rem; }
+  .about_us__text:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.about_us__description {
+  border-left: 2px solid #e8bf5d;
+  padding-left: 1.25rem; }
+  .about_us__description h2 {
+    font-size: 1.875em;
+    color: #111111;
+    letter-spacing: 1.2px; }
+  .about_us__description p {
+    font-family: PlayfairDisplay;
+    color: #666666; }
+
+.about_us__history {
+  width: 50%;
+  padding: 0 1.25rem;
+  float: left;
+  box-sizing: border-box; }
+  .about_us__history h3 {
+    font-family: PlayfairDisplay;
+    font-size: 1.3125em;
+    color: #111111; }
+  .about_us__history span {
+    font-size: 1.3125em;
+    color: #111111;
+    font-family: OpenSans;
+    font-weight: bold; }
+  .about_us__history p {
+    font-family: OpenSans;
+    font-size: 1em;
+    color: #111111;
+    margin-left: 2.9375rem;
+    display: inline;
+    text-align: justify; }
+
+.about_us__expertise {
+  width: 50%;
+  padding: 0 1.25rem;
+  float: right;
+  box-sizing: border-box; }
+  .about_us__expertise h3 {
+    font-family: PlayfairDisplay;
+    font-size: 1.3125em;
+    color: #111111; }
+  .about_us__expertise p {
+    font-family: OpenSans;
+    font-size: 0.875em;
+    color: #666666;
+    text-align: justify; }
