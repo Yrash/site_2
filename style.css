@@ -118,57 +118,401 @@ nav {
       .section_title__button button:focus {
         outline: none; }
 
-.about_us__text {
-  margin: 0 -1.25rem; }
-  .about_us__text:after {
+.about_us {
+  padding-top: 6.1875rem;
+  margin-bottom: 6.375rem;
+  box-sizing: border-box; }
+  .about_us__text {
+    margin: 0 -1.25rem; }
+    .about_us__text:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .about_us__description {
+    border-left: 2px solid #e8bf5d;
+    padding-left: 1.25rem;
+    margin-bottom: 3.125rem; }
+    .about_us__description h2 {
+      font-size: 1.875em;
+      color: #111111;
+      letter-spacing: 1.2px;
+      margin-bottom: 1.4375rem; }
+    .about_us__description p {
+      font-family: PlayfairDisplay;
+      color: #666666; }
+  .about_us__history {
+    width: 50%;
+    padding: 0 1.25rem;
+    float: left;
+    box-sizing: border-box; }
+    .about_us__history div:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .about_us__history h3 {
+      font-family: PlayfairDisplay;
+      font-size: 1.3125em;
+      color: #111111;
+      margin-bottom: 2.1875rem; }
+    .about_us__history span {
+      width: 16.66667%;
+      display: block;
+      font-size: 1.3125em;
+      color: #111111;
+      font-family: OpenSans;
+      font-weight: bold;
+      float: left; }
+    .about_us__history p {
+      width: 83.33333%;
+      font-family: OpenSans;
+      float: right;
+      font-size: 1em;
+      color: #111111;
+      display: block;
+      box-sizing: border-box;
+      padding-left: 2.3125rem;
+      text-align: justify; }
+  .about_us__expertise {
+    width: 50%;
+    padding: 0 1.25rem;
+    float: right;
+    box-sizing: border-box; }
+    .about_us__expertise h3 {
+      font-family: PlayfairDisplay;
+      font-size: 1.3125em;
+      color: #111111;
+      margin-bottom: 2.1875rem; }
+    .about_us__expertise p {
+      font-family: OpenSans;
+      font-size: 0.875em;
+      color: #666666;
+      text-align: justify; }
+
+.practis_area {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-color: #111111;
+  color: white; }
+  .practis_area__description {
+    margin-bottom: 2.1875rem;
+    border-left: 2px solid #e8bf5d;
+    padding-left: 1.25rem; }
+    .practis_area__description h2 {
+      font-size: 1.875em;
+      color: #ffffff;
+      letter-spacing: 1.2px;
+      margin-bottom: 1.4375rem; }
+    .practis_area__description p {
+      font-family: PlayfairDisplay;
+      color: #b9b9b9; }
+  .practis_area__items {
+    margin: 0 -2rem; }
+    .practis_area__items:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .practis_area__img[img="1"] {
+    background-image: url(./src/section/item_1.png); }
+  .practis_area__img[img="2"] {
+    background-image: url(./src/section/item_2.png); }
+  .practis_area__img[img="3"] {
+    background-image: url(./src/section/item_3.png); }
+  .practis_area__img[img="4"] {
+    background-image: url(./src/section/item_5.png); }
+  .practis_area__item {
+    margin-top: 4.25rem;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 2rem; }
+    .practis_area__item:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .practis_area__item > div:first-child {
+      background-repeat: no-repeat;
+      width: 16.66667%;
+      width: 3.625rem;
+      height: 3.625rem;
+      float: left;
+      box-sizing: border-box; }
+    .practis_area__item > div:last-child {
+      padding-left: 2.375rem;
+      width: 83.33333%;
+      float: left;
+      box-sizing: border-box; }
+      .practis_area__item > div:last-child h3 {
+        margin-bottom: 2rem;
+        font-size: 1.3125em;
+        color: #ffffff;
+        font-family: PlayfairDisplay; }
+      .practis_area__item > div:last-child p {
+        font-size: 0.875em;
+        font-family: OpenSans;
+        line-height: 2; }
+
+.meet_our_attorney {
+  padding: 6.25rem 0; }
+  .meet_our_attorney__description {
+    margin-bottom: 3.125rem;
+    border-left: 2px solid #e8bf5d;
+    padding-left: 1.25rem; }
+    .meet_our_attorney__description h2 {
+      font-size: 1.875em;
+      color: #111111;
+      letter-spacing: 1.2px;
+      margin-bottom: 1.4375rem; }
+    .meet_our_attorney__description p {
+      font-family: PlayfairDisplay;
+      color: #666666; }
+  .meet_our_attorney__items {
+    margin: 0 -0.9375rem; }
+    .meet_our_attorney__items:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .meet_our_attorney__item {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.9375rem;
+    width: 25%; }
+    .meet_our_attorney__item img {
+      width: 100%; }
+    .meet_our_attorney__item h3 {
+      color: #111111;
+      font-size: 1.3125em;
+      line-height: 1.48;
+      font-family: PlayfairDisplay; }
+    .meet_our_attorney__item p {
+      color: #666666;
+      font-family: OpenSans;
+      letter-spacing: 0.6px; }
+
+.our_clients_say {
+  padding: 6.25rem 0; }
+  .our_clients_say__description {
+    margin-bottom: 3.125rem;
+    border-left: 2px solid #e8bf5d;
+    padding-left: 1.25rem; }
+    .our_clients_say__description h2 {
+      font-size: 1.875em;
+      color: #111111;
+      letter-spacing: 1.2px;
+      margin-bottom: 1.4375rem; }
+    .our_clients_say__description p {
+      font-family: PlayfairDisplay;
+      color: #666666; }
+  .our_clients_say__tems {
+    margin: 0 -0.9375rem; }
+    .our_clients_say__tems:after {
+      content: " ";
+      display: table;
+      clear: both; }
+
+.client_say_item {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.9375rem;
+  width: 33.33333%; }
+  .client_say_item__cpments {
+    border-bottom: 3px solid #e8bf5b;
+    padding-bottom: 1.8125rem; }
+    .client_say_item__cpments span {
+      font-family: OpenSans;
+      font-size: 1em; }
+    .client_say_item__cpments div {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 48%; }
+    .client_say_item__cpments-right {
+      text-align: right; }
+      .client_say_item__cpments-right span {
+        padding-left: 1.0625rem;
+        background: url(./src/recent-publications/share.png) no-repeat;
+        background-position: left; }
+    .client_say_item__cpments-left {
+      text-align: left; }
+      .client_say_item__cpments-left span {
+        padding-left: 1.375rem;
+        background: url(./src/recent-publications/coments.png) no-repeat;
+        background-position: left; }
+  .client_say_item > p {
+    font-size: 0.875em;
+    margin-top: 2.375rem;
+    margin-bottom: 2.4375rem;
+    color: #666666;
+    text-align: justify; }
+  .client_say_item img {
+    width: 100%; }
+  .client_say_item strong {
+    color: #111111;
+    font-size: 1.3125em;
+    font-family: PlayfairDisplay;
+    display: block; }
+  .client_say_item i {
+    color: #666666;
+    font-size: 1em;
+    font-family: OpenSans; }
+  .client_say_item i:last-child {
+    text-align: left;
+    margin-left: 40%;
+    white-space: nowrap; }
+  .client_say_item span {
+    font-size: 1em; }
+
+.recent_publications {
+  padding-top: 6.25rem;
+  padding-bottom: 10rem;
+  background-color: #111111; }
+  .recent_publications__description {
+    border-left: 2px solid #e8bf5d;
+    padding-left: 1.25rem;
+    margin-bottom: 4.8125rem; }
+    .recent_publications__description h2 {
+      font-size: 1.875em;
+      color: #ffffff;
+      letter-spacing: 1.2px;
+      margin-bottom: 1.4375rem; }
+    .recent_publications__description p {
+      font-family: PlayfairDisplay;
+      color: #b9b9b9; }
+  .recent_publications__right {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    padding-left: 2.0625rem; }
+    .recent_publications__right p {
+      background-color: #e8bf5d;
+      box-shadow: 0 12px 40px 0 rgba(216, 178, 87, 0.32);
+      padding: 2.875rem;
+      text-align: justify;
+      color: #111111;
+      font-family: OpenSans;
+      font-size: 0.875em;
+      line-height: 2.21; }
+  .recent_publications__left {
+    width: 50%;
+    float: left;
+    box-sizing: border-box; }
+    .recent_publications__left:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .recent_publications__left strong {
+      color: white;
+      font-size: 0.875em;
+      text-align: right; }
+    .recent_publications__left span {
+      font-weight: 600;
+      color: white;
+      text-align: right;
+      display: block;
+      float: right;
+      width: 20%; }
+    .recent_publications__left div {
+      padding-top: 1.1875rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e8bf5d; }
+    .recent_publications__left div:first-child {
+      border-top: 1px solid #e8bf5d; }
+
+.footer {
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem; }
+  .footer:after {
     content: " ";
     display: table;
     clear: both; }
-
-.about_us__description {
-  border-left: 2px solid #e8bf5d;
-  padding-left: 1.25rem; }
-  .about_us__description h2 {
-    font-size: 1.875em;
-    color: #111111;
-    letter-spacing: 1.2px; }
-  .about_us__description p {
-    font-family: PlayfairDisplay;
-    color: #666666; }
-
-.about_us__history {
-  width: 50%;
-  padding: 0 1.25rem;
-  float: left;
-  box-sizing: border-box; }
-  .about_us__history h3 {
-    font-family: PlayfairDisplay;
-    font-size: 1.3125em;
-    color: #111111; }
-  .about_us__history span {
-    font-size: 1.3125em;
-    color: #111111;
-    font-family: OpenSans;
-    font-weight: bold; }
-  .about_us__history p {
-    font-family: OpenSans;
-    font-size: 1em;
-    color: #111111;
-    margin-left: 2.9375rem;
-    display: inline;
-    text-align: justify; }
-
-.about_us__expertise {
-  width: 50%;
-  padding: 0 1.25rem;
-  float: right;
-  box-sizing: border-box; }
-  .about_us__expertise h3 {
-    font-family: PlayfairDisplay;
-    font-size: 1.3125em;
-    color: #111111; }
-  .about_us__expertise p {
-    font-family: OpenSans;
-    font-size: 0.875em;
-    color: #666666;
-    text-align: justify; }
+  .footer__map {
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
+    padding-top: 4.375rem;
+    padding-bottom: 4.75rem; }
+    .footer__map iframe {
+      width: 100%;
+      height: 25rem;
+      box-shadow: -16px 16px 0px 1px #e8bf5b; }
+  .footer__form {
+    padding-top: 4.375rem;
+    padding-bottom: 4.75rem;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 12.5rem;
+    padding-right: 3.0625rem; }
+    .footer__form textarea {
+      width: 100%;
+      height: 7.4375rem;
+      padding: 0.625rem;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #333333; }
+      .footer__form textarea:focus {
+        outline-color: #e8bf5b; }
+    .footer__form input {
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid #333333;
+      font-size: 0.875em;
+      font-family: OpenSans;
+      padding-bottom: 0.5625rem;
+      padding-top: 2.25rem; }
+      .footer__form input:focus {
+        outline-color: #e8bf5b; }
+    .footer__form input[type="button"] {
+      background-color: #e8bf5d;
+      width: 10.625rem;
+      height: 3.125rem;
+      border-radius: 1.5625rem;
+      border: none;
+      line-height: 3.125rem;
+      padding: 0;
+      font-size: 1em;
+      font-family: PlayfairDisplay; }
+  .footer__description {
+    border-left: 2px solid #e8bf5d;
+    padding-left: 1.25rem; }
+    .footer__description h2 {
+      font-size: 1.875em;
+      color: #111111;
+      letter-spacing: 1.2px;
+      margin-bottom: 1.4375rem; }
+    .footer__description p {
+      font-family: PlayfairDisplay;
+      color: #666666; }
+  .footer__center {
+    background-color: #111111;
+    color: white;
+    height: 5.0625rem; }
+  .footer__left {
+    float: left;
+    width: 50%;
+    line-height: 5.0625rem; }
+    .footer__left p {
+      display: inline; }
+    .footer__left span {
+      color: #b5b5b5; }
+    .footer__left strong {
+      color: #e8bf5d; }
+  .footer__right {
+    line-height: 5.0625rem;
+    text-align: right;
+    float: right;
+    width: 50%; }
+    .footer__right a {
+      display: inline-block;
+      width: 1.75rem;
+      height: 0.9375rem; }
+    .footer__right a[img="f"] {
+      background: url("./src/footer/sotset_sprite.png");
+      background-position: 0rem 0; }
+    .footer__right a[img="t"] {
+      background: url("./src/footer/sotset_sprite.png");
+      background-position: -1.4375rem 0; }
+    .footer__right a[img="g"] {
+      background: url("./src/footer/sotset_sprite.png");
+      background-position: -3.5rem 0; }
+    .footer__right a[img="i"] {
+      background: url("./src/footer/sotset_sprite.png");
+      background-position: 1.75rem 0; }
