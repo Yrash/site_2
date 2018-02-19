@@ -13,6 +13,18 @@ html {
     content: " ";
     display: table;
     clear: both; }
+  @media only screen and (min-width: 320px) {
+    .wrap {
+      width: 80%; } }
+  @media only screen and (min-width: 750px) {
+    .wrap {
+      width: 80%; } }
+  @media only screen and (min-width: 1024px) {
+    .wrap {
+      width: 100%; } }
+  @media only screen and (min-width: 1200px) {
+    .wrap {
+      width: 100%; } }
 
 .header__top_bar {
   height: 6.875rem; }
@@ -23,6 +35,7 @@ html {
 
 .header__logo {
   width: 25%;
+  margin: 0 auto;
   float: left;
   position: relative;
   top: 2.5rem;
@@ -30,6 +43,7 @@ html {
 
 .header__nav {
   width: 75%;
+  margin: 0 auto;
   float: left; }
 
 nav {
@@ -43,6 +57,7 @@ nav {
       clear: both; }
     nav ul li {
       width: 16.66667%;
+      margin: 0 auto;
       float: left;
       box-sizing: border-box;
       text-align: center;
@@ -141,10 +156,25 @@ nav {
       font-family: PlayfairDisplay;
       color: #666666; }
   .about_us__history {
-    width: 50%;
     padding: 0 1.25rem;
     float: left;
     box-sizing: border-box; }
+    @media only screen and (min-width: 320px) {
+      .about_us__history {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .about_us__history {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .about_us__history {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .about_us__history {
+        width: 50%;
+        margin: 0 auto; } }
     .about_us__history div:after {
       content: " ";
       display: table;
@@ -156,6 +186,7 @@ nav {
       margin-bottom: 2.1875rem; }
     .about_us__history span {
       width: 16.66667%;
+      margin: 0 auto;
       display: block;
       font-size: 1.3125em;
       color: #111111;
@@ -164,6 +195,7 @@ nav {
       float: left; }
     .about_us__history p {
       width: 83.33333%;
+      margin: 0 auto;
       font-family: OpenSans;
       float: right;
       font-size: 1em;
@@ -173,10 +205,25 @@ nav {
       padding-left: 2.3125rem;
       text-align: justify; }
   .about_us__expertise {
-    width: 50%;
     padding: 0 1.25rem;
     float: right;
     box-sizing: border-box; }
+    @media only screen and (min-width: 320px) {
+      .about_us__expertise {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .about_us__expertise {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .about_us__expertise {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .about_us__expertise {
+        width: 50%;
+        margin: 0 auto; } }
     .about_us__expertise h3 {
       font-family: PlayfairDisplay;
       font-size: 1.3125em;
@@ -222,16 +269,32 @@ nav {
   .practis_area__item {
     margin-top: 4.25rem;
     float: left;
-    width: 50%;
     box-sizing: border-box;
     padding: 0 2rem; }
     .practis_area__item:after {
       content: " ";
       display: table;
       clear: both; }
+    @media only screen and (min-width: 320px) {
+      .practis_area__item {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .practis_area__item {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .practis_area__item {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .practis_area__item {
+        width: 50%;
+        margin: 0 auto; } }
     .practis_area__item > div:first-child {
       background-repeat: no-repeat;
       width: 16.66667%;
+      margin: 0 auto;
       width: 3.625rem;
       height: 3.625rem;
       float: left;
@@ -239,6 +302,7 @@ nav {
     .practis_area__item > div:last-child {
       padding-left: 2.375rem;
       width: 83.33333%;
+      margin: 0 auto;
       float: left;
       box-sizing: border-box; }
       .practis_area__item > div:last-child h3 {
@@ -274,8 +338,23 @@ nav {
   .meet_our_attorney__item {
     float: left;
     box-sizing: border-box;
-    padding: 0 0.9375rem;
-    width: 25%; }
+    padding: 0 0.9375rem; }
+    @media only screen and (min-width: 320px) {
+      .meet_our_attorney__item {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .meet_our_attorney__item {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .meet_our_attorney__item {
+        width: 33.33333%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .meet_our_attorney__item {
+        width: 25%;
+        margin: 0 auto; } }
     .meet_our_attorney__item img {
       width: 100%; }
     .meet_our_attorney__item h3 {
@@ -313,7 +392,7 @@ nav {
   float: left;
   box-sizing: border-box;
   padding: 0 0.9375rem;
-  width: 33.33333%; }
+  margin-top: 0; }
   .client_say_item__cpments {
     border-bottom: 3px solid #e8bf5b;
     padding-bottom: 1.8125rem; }
@@ -342,6 +421,24 @@ nav {
     margin-bottom: 2.4375rem;
     color: #666666;
     text-align: justify; }
+  @media only screen and (min-width: 320px) {
+    .client_say_item {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 2.5rem; } }
+  @media only screen and (min-width: 750px) {
+    .client_say_item {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 2.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    .client_say_item {
+      width: 33.33333%;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 1200px) {
+    .client_say_item {
+      width: 33.33333%;
+      margin: 0 auto; } }
   .client_say_item img {
     width: 100%; }
   .client_say_item strong {
@@ -377,10 +474,25 @@ nav {
       font-family: PlayfairDisplay;
       color: #b9b9b9; }
   .recent_publications__right {
-    width: 50%;
     float: right;
     box-sizing: border-box;
     padding-left: 2.0625rem; }
+    @media only screen and (min-width: 320px) {
+      .recent_publications__right {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .recent_publications__right {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .recent_publications__right {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .recent_publications__right {
+        width: 50%;
+        margin: 0 auto; } }
     .recent_publications__right p {
       background-color: #e8bf5d;
       box-shadow: 0 12px 40px 0 rgba(216, 178, 87, 0.32);
@@ -391,9 +503,24 @@ nav {
       font-size: 0.875em;
       line-height: 2.21; }
   .recent_publications__left {
-    width: 50%;
     float: left;
     box-sizing: border-box; }
+    @media only screen and (min-width: 320px) {
+      .recent_publications__left {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .recent_publications__left {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .recent_publications__left {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .recent_publications__left {
+        width: 50%;
+        margin: 0 auto; } }
     .recent_publications__left:after {
       content: " ";
       display: table;
@@ -417,18 +544,32 @@ nav {
       border-top: 1px solid #e8bf5d; }
 
 .footer {
-  padding-bottom: 6.25rem;
   padding-top: 6.25rem; }
   .footer:after {
     content: " ";
     display: table;
     clear: both; }
   .footer__map {
-    width: 50%;
     box-sizing: border-box;
     float: right;
     padding-top: 4.375rem;
     padding-bottom: 4.75rem; }
+    @media only screen and (min-width: 320px) {
+      .footer__map {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .footer__map {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .footer__map {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .footer__map {
+        width: 50%;
+        margin: 0 auto; } }
     .footer__map iframe {
       width: 100%;
       height: 25rem;
@@ -437,10 +578,25 @@ nav {
     padding-top: 4.375rem;
     padding-bottom: 4.75rem;
     float: left;
-    width: 50%;
     box-sizing: border-box;
     padding-left: 12.5rem;
     padding-right: 3.0625rem; }
+    @media only screen and (min-width: 320px) {
+      .footer__form {
+        width: 100%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 750px) {
+      .footer__form {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .footer__form {
+        width: 50%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1200px) {
+      .footer__form {
+        width: 50%;
+        margin: 0 auto; } }
     .footer__form textarea {
       width: 100%;
       height: 7.4375rem;
@@ -482,12 +638,14 @@ nav {
       font-family: PlayfairDisplay;
       color: #666666; }
   .footer__center {
+    margin-top: 3.25rem;
     background-color: #111111;
     color: white;
     height: 5.0625rem; }
   .footer__left {
     float: left;
     width: 50%;
+    margin: 0 auto;
     line-height: 5.0625rem; }
     .footer__left p {
       display: inline; }
@@ -499,7 +657,8 @@ nav {
     line-height: 5.0625rem;
     text-align: right;
     float: right;
-    width: 50%; }
+    width: 50%;
+    margin: 0 auto; }
     .footer__right a {
       display: inline-block;
       width: 1.75rem;

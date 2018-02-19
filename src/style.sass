@@ -1,6 +1,7 @@
 
 =boxW($col,$numbe)
 	width: (100% * $numbe)/$col
+	margin: 0 auto
 =clearfix
 	&:after
 		content: " "
@@ -8,6 +9,14 @@
 		clear: both
 $font_1 : PlayfairDisplay
 $font_2 : OpenSans
+$xs: "(min-width: 320px)"
+$sm: "(min-width: 750px)"
+$md: "(min-width: 1024px)"
+$lg: "(min-width: 1200px)"
+
+
+
+
 @function rem($rem)
   @return ($rem/16)*1rem
 @function em($rem)
@@ -15,6 +24,9 @@ $font_2 : OpenSans
 *
 	margin: 0
 	padding: 0
+@mixin m_query($media)
+    @media only screen and #{$media}
+        @content
 html 
 	font-size: 16px
 =des()
@@ -48,6 +60,14 @@ html
 	margin: 0 auto
 	+clearfix
 	position: relative
+	@include m_query($xs)
+		width: 80%
+	@include m_query($sm)
+		width: 80%
+	@include m_query($md)
+		width: 100%
+	@include m_query($lg)
+		width: 100%
 .header
 	&__top_bar
 		height: rem(110)
@@ -172,7 +192,16 @@ fuel is cheaper
 		+des
 		margin-bottom: rem(50)
 	&__history
-		+boxW(12,6)
+		
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,12)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)
+
 		padding: 0 rem(20)
 		float: left
 		box-sizing: border-box
@@ -203,7 +232,16 @@ fuel is cheaper
 			padding-left: rem(37)
 			text-align: justify
 	&__expertise
-		+boxW(12,6)
+
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,12)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)
+
 		padding: 0 rem(20)
 		float: right
 		box-sizing: border-box
@@ -241,7 +279,14 @@ fuel is cheaper
 		margin-top: rem(68)
 		float: left
 		+clearfix
-		+boxW(12,6)
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,12)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)
 		box-sizing: border-box
 		padding: 0 rem(32)
 		&> div:first-child
@@ -281,7 +326,14 @@ fuel is cheaper
 		float: left
 		box-sizing: border-box
 		padding: 0 rem(15)
-		+boxW(12,3)
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,6)
+		@include m_query($md)
+			+boxW(12,4)
+		@include m_query($lg)
+			+boxW(12,3)
 		img
 			width: 100%
 		h3
@@ -339,7 +391,19 @@ fuel is cheaper
 	float: left
 	box-sizing: border-box
 	padding: 0 rem(15)
-	+boxW(12,4)
+	margin-top: 0
+	@include m_query($xs)
+		+boxW(12,12)
+		margin-top: rem(40)
+
+	@include m_query($sm)
+		+boxW(12,6)
+		margin-top: rem(40)
+
+	@include m_query($md)
+		+boxW(12,4)
+	@include m_query($lg)
+		+boxW(12,4)
 	img 
 		width: 100%
 	strong
@@ -370,7 +434,14 @@ fuel is cheaper
 		+des-b
 		margin-bottom: rem(77)
 	&__right
-		+boxW(12,6)
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,12)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)
 		float: right
 		box-sizing: border-box
 		padding-left: rem(33)
@@ -384,7 +455,14 @@ fuel is cheaper
 			font-size: em(14)
 			line-height: 2.21
 	&__left
-		+boxW(12,6)	
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,12)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)	
 		float: left
 		box-sizing: border-box	
 		+clearfix
@@ -406,11 +484,17 @@ fuel is cheaper
 		div:first-child
 			border-top: 1px solid #e8bf5d
 .footer
-	padding-bottom: rem(100)
 	padding-top: rem(100)	
 	+clearfix
 	&__map
-		width: 50%
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,6)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)
 		box-sizing: border-box
 		float: right
 		padding-top: rem(70)
@@ -423,7 +507,14 @@ fuel is cheaper
 		padding-top: rem(70)
 		padding-bottom: rem(76)
 		float: left
-		width: 50%
+		@include m_query($xs)
+			+boxW(12,12)
+		@include m_query($sm)
+			+boxW(12,6)
+		@include m_query($md)
+			+boxW(12,6)
+		@include m_query($lg)
+			+boxW(12,6)
 		box-sizing: border-box
 		padding-left: rem(200)
 		padding-right: rem(49) 
@@ -460,6 +551,7 @@ fuel is cheaper
 	&__description
 		+des
 	&__center
+		margin-top: rem(128-76)
 		background-color: #111111
 		color: white
 		height: rem(81)
