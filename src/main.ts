@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // let o:object = {
 // 	div:{ teg: "div", className:"fater" ,parent: "form_to_do",text:""},
 // 	label: { teg: "span", className:"" ,parent: "fater",text:"ddddddddd"},
