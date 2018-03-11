@@ -1,4 +1,3 @@
-
 // let o:object = {
 // 	div:{ teg: "div", className:"fater" ,parent: "form_to_do",text:""},
 // 	label: { teg: "span", className:"" ,parent: "fater",text:"ddddddddd"},
@@ -6,8 +5,6 @@
 // 	button_change:{ teg: "button", className:"" ,parent: "fater",text:"Chang"},
 // 	button_del:{ teg: "button", className:"" ,parent: "fater",text:"dell"},
 // }
-
-
 // let array_note = [
 // {
 // 	div:{ teg: "div", className:"fater" ,parent: "form_to_do",text:""},
@@ -58,14 +55,7 @@
 // 	button_change:{ teg: "button", className:"" ,parent: "fater_7",text:"Chang"},
 // 	button_del:{ teg: "button", className:"" ,parent: "fater_7",text:"dell"},
 // }
-
-
-
-
 // ]
-
-
-
 // let array_note_2 = [
 // {
 // 	div:{ teg: "div", className:"fater" ,parent: "form_to_do",text:""},
@@ -116,19 +106,10 @@
 // 	button_change:{ teg: "button", className:"" ,parent: "fater_7",text:"Chang"},
 // 	button_del:{ teg: "button", className:"" ,parent: "fater_7",text:"dell"},
 // }
-
-
-
-
 // ]
-
-
-
 // class Notes {
 // 	array:Array<object>;
-
 // }
-
 // class element extends Notes{
 // 	tag:string;
 // 	className:string;
@@ -142,10 +123,8 @@
 // 		this.global = global;
 // 		var parents = document.getElementsByClassName(global)[0];
 // 		var mount_point_className = "mount_point";
-
 // 		this.mount_point = document.createElement("div");
 // 		this.mount_point.className = mount_point_className;
-
 // 		this.mount_point_className = mount_point_className ; 
 // 		parents.appendChild(this.mount_point);
 // 	}
@@ -154,9 +133,7 @@
 // 		this.className = className;
 // 		this.text = text;
 // 		this.parent = parent
-
 // 		var parents = document.getElementsByClassName(this.parent)[0];
-
 // 		var element = document.createElement(this.tag);
 // 			element.className = this.className;
 // 			element.innerHTML = this.text;
@@ -164,7 +141,6 @@
 // 				this.mount_point.appendChild(element);
 // 			}else{
 // 				parents.appendChild(element);
-
 // 			}
 // 	}
 // 	create_obj(tag:string, className:string, parent:string, text?:string ){
@@ -187,9 +163,7 @@
 // 		this.createNotes(array)
 // 		console.log("Перезапуск")
 // 	}
-
 // }
-
 //  new element("form_to_do").createNotes(array_note)
 //  new element("form_to_do").reloadNote(array_note)
 //  new element("form_to_do").reloadNote(array_note)
@@ -198,31 +172,24 @@
 //  new element("form_to_do").reloadNote(array_note)
 //  new element("form_to_do").reloadNote(array_note)
 //  new element("form_to_do").reloadNote(array_note)
-
 var x = 0;
 var lostX = 0;
 var y = 0;
 var lostY = 0;
-var topBottom = ""
-var storn = ""
-
-title.addEventListener('mousemove',function(event){
-	
-	x = event.pageX
-	y = event.pageY
-
-	setTimeout(function(){ lostX = event.pageX  ;  (lostX > x)? storn = "left": storn = "right" ;   },500)
-	setTimeout(function(){ lostX = event.pageY  ;  (lostY > y)? topBottom = "top": topBottom = "bottom" ;   },500)
-	console.log(storn + topBottom)
-		document.getElementsByClassName("img")[0].style.transition =  "all 1s ease-in-out"
-
-	if(storn === "right" ){
-		document.getElementsByClassName("img")[0].style.left =  "-" + 40 + "px"
-	}else if(storn === "left" ){
-		document.getElementsByClassName("img")[0].style.left =  "" + 40 + "px"
-
-	}
-	// document.getElementsByClassName("img")[0].style.bottom =  "-" + event.pageY + "px"
-	
-
-})
+var topBottom = "";
+var storn = "";
+title.addEventListener('mousemove', function (event) {
+    x = event.pageX;
+    y = event.pageY;
+    setTimeout(function () { lostX = event.pageX; (lostX > x) ? storn = "left" : storn = "right"; }, 500);
+    setTimeout(function () { lostX = event.pageY; (lostY > y) ? topBottom = "top" : topBottom = "bottom"; }, 500);
+    console.log(storn + topBottom);
+    document.getElementsByClassName("img")[0].style.transition = "all 1s ease-in-out";
+    if (storn === "right") {
+        document.getElementsByClassName("img")[0].style.left = "-" + 40 + "px";
+    }
+    else if (storn === "left") {
+        document.getElementsByClassName("img")[0].style.left = "" + 40 + "px";
+    }
+    // document.getElementsByClassName("img")[0].style.bottom =  "-" + event.pageY + "px"
+});

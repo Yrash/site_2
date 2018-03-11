@@ -11,13 +11,7 @@
   "dependencies": {
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
-<<<<<<< HEAD
-    "gulp-typescript": "^4.0.1",
-    "node-sass": "^4.7.2",
-    "typescript": "^2.7.2"
-=======
     "gulp-typescript": "^4.0.1"
->>>>>>> b0a34db1b887e6d782e785477bde538c94625cc7
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
