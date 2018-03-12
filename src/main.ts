@@ -206,41 +206,72 @@ var lostY = 0;
 var topBottom = ""
 var storn = ""
 
-title.addEventListener('mousemove',function(event){
+title.addEventListener('mousemove',function(event){	
+
+	var img:any = document.getElementsByClassName("img")[0];
+	var title = document.getElementById("title")
+	var title_wrap:any =document.getElementsByClassName("section_wrap_title")[0];
+	var text:any = document.getElementsByClassName("section_title__text")[0];
 	var center = title.offsetWidth / 2 ;
 	var centerY = title.offsetHeight / 2
-	console.log(centerY)
-	document.getElementsByClassName("img")[0].style.transition =  "all 0.1s ease-in-out"
+
+	img.style.transition =  "all 0.1s ease-in-out"
+	title.style.transition =  "all 0.1s ease-in-out"
+	text.style.transition =  "all 0.1s ease-in-out"
 	x = event.pageX
 	y = event.pageY
 	
-	function osX(tern,pxTern,){
-		document.getElementsByClassName("img")[0].style.left =  ""+ tern +"" + pxTern/15 + "px"
+	function os(ternX,ternY,pxTernX,pxTernY){
+		// var a = (ternY === "-")?(141/16)- ((pxTernY/25)/16):(141/16)- ((pxTernY/25)/16)
+
+
+		img.style.left =  ""+ ternX +"" + pxTernX/35 + "px";
+
+		img.style.bottom =  ""+ ternY +"" + pxTernY/35 + "px"
+
+		// text.style.left = ""+ ternX +"" + pxTernX/25 + "px";
+
+		// text.style.bottom =   "" +  a + "rem";
+
+		title_wrap.style.backgroundPosition =  ""+((ternX === "-")?"":"-")+"" +(pxTernX/45)+ "px" + " "+""+ ternY+pxTernY/45+"px"; 
+
+		
+
+		
+
 	}
-	function osY(tern,pxTern,){
-		document.getElementsByClassName("img")[0].style.bottom =  ""+ tern +"" + pxTern/15 + "px"
-	}
+
 	 
 	var raz = 0;
+	var ternX ="",
+		ternY ="",
+		pxTernX= 0,
+		pxTernY= 0;
+
 	if(event.pageX < center){ 
 		raz = (center - event.pageX)
 		
-		osX("",raz)
+		pxTernX = raz;
+		ternX = "";
 
 	}else{
 		raz = (event.pageX - center)
 		
-		osX("-",raz) ;
+		pxTernX = raz;
+		ternX = "-";
+
 	}
 	if(event.pageY < centerY){
-		raz = (center - event.pageY)		
-		osY("-",raz)
+		raz = (center - event.pageY)
+		pxTernY = raz;		
+		ternY = "-";
 	}else{
 		raz = (event.pageY - center)
+		pxTernY = raz;
 		
-		osY("",raz) ;
+		ternY = "";
 	}
-
+	os(ternX,ternY,pxTernX,pxTernY)
 
 	
 
