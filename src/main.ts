@@ -208,12 +208,17 @@ var storn = ""
 
 title.addEventListener('mousemove',function(event){
 	var center = title.offsetWidth / 2 ;
-	document.getElementsByClassName("img")[0].style.transition =  "all 0.2s ease-in-out"
+	var centerY = title.offsetHeight / 2
+	console.log(centerY)
+	document.getElementsByClassName("img")[0].style.transition =  "all 0.1s ease-in-out"
 	x = event.pageX
 	y = event.pageY
 	
-	function osX(tern,pxTern){
-		document.getElementsByClassName("img")[0].style.left =  ""+ tern +"" + pxTern/6 + "px"
+	function osX(tern,pxTern,){
+		document.getElementsByClassName("img")[0].style.left =  ""+ tern +"" + pxTern/15 + "px"
+	}
+	function osY(tern,pxTern,){
+		document.getElementsByClassName("img")[0].style.bottom =  ""+ tern +"" + pxTern/15 + "px"
 	}
 	 
 	var raz = 0;
@@ -227,7 +232,14 @@ title.addEventListener('mousemove',function(event){
 		
 		osX("-",raz) ;
 	}
-
+	if(event.pageY < centerY){
+		raz = (center - event.pageY)		
+		osY("-",raz)
+	}else{
+		raz = (event.pageY - center)
+		
+		osY("",raz) ;
+	}
 
 
 	
