@@ -179,17 +179,26 @@ var lostY = 0;
 var topBottom = "";
 var storn = "";
 title.addEventListener('mousemove', function (event) {
+    var center = title.offsetWidth / 2;
+    document.getElementsByClassName("img")[0].style.transition = "all 0.2s ease-in-out";
     x = event.pageX;
     y = event.pageY;
-    setTimeout(function () { lostX = event.pageX; (lostX > x) ? storn = "left" : storn = "right"; }, 500);
-    setTimeout(function () { lostX = event.pageY; (lostY > y) ? topBottom = "top" : topBottom = "bottom"; }, 500);
-    console.log(storn + topBottom);
-    document.getElementsByClassName("img")[0].style.transition = "all 1s ease-in-out";
-    if (storn === "right") {
-        document.getElementsByClassName("img")[0].style.left = "-" + 40 + "px";
+    function osX(tern, pxTern) {
+        document.getElementsByClassName("img")[0].style.left = "" + tern + "" + pxTern / 6 + "px";
     }
-    else if (storn === "left") {
-        document.getElementsByClassName("img")[0].style.left = "" + 40 + "px";
+    var raz = 0;
+    if (event.pageX < center) {
+        raz = (center - event.pageX);
+        osX("", raz);
     }
+    else {
+        raz = (event.pageX - center);
+        osX("-", raz);
+    }
+    // if(storn === "right" ){
+    // 	document.getElementsByClassName("img")[0].style.left =  "-" + 40 + "px"
+    // }else if(storn === "left" ){
+    // 	document.getElementsByClassName("img")[0].style.left =  "" + 40 + "px"
+    // }
     // document.getElementsByClassName("img")[0].style.bottom =  "-" + event.pageY + "px"
 });
