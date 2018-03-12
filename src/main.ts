@@ -215,9 +215,9 @@ title.addEventListener('mousemove',function(event){
 	var center = title.offsetWidth / 2 ;
 	var centerY = title.offsetHeight / 2
 
-	img.style.transition =  "all 0.1s ease-in-out"
-	title.style.transition =  "all 0.1s ease-in-out"
-	text.style.transition =  "all 0.1s ease-in-out"
+	img.style.transition =  "all 1s ease-out"
+	title_wrap.style.transition =  "all 1s ease-out"
+	text.style.transition =  "all 1s ease-out"
 	x = event.pageX
 	y = event.pageY
 	

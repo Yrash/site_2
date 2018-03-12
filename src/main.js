@@ -185,9 +185,9 @@ title.addEventListener('mousemove', function (event) {
     var text = document.getElementsByClassName("section_title__text")[0];
     var center = title.offsetWidth / 2;
     var centerY = title.offsetHeight / 2;
-    img.style.transition = "all 0.1s ease-in-out";
-    title.style.transition = "all 0.1s ease-in-out";
-    text.style.transition = "all 0.1s ease-in-out";
+    img.style.transition = "all 1s ease-out";
+    title_wrap.style.transition = "all 1s ease-out";
+    text.style.transition = "all 1s ease-out";
     x = event.pageX;
     y = event.pageY;
     function os(ternX, ternY, pxTernX, pxTernY) {
