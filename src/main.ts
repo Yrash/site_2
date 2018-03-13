@@ -275,13 +275,6 @@ title.addEventListener('mousemove',function(event){
 
 	
 
-	// if(storn === "right" ){
-	// 	document.getElementsByClassName("img")[0].style.left =  "-" + 40 + "px"
-	// }else if(storn === "left" ){
-	// 	document.getElementsByClassName("img")[0].style.left =  "" + 40 + "px"
-
-	// }
-	// document.getElementsByClassName("img")[0].style.bottom =  "-" + event.pageY + "px"
 	
 
 })
@@ -294,6 +287,6 @@ title.addEventListener('mousemove',function(event){
 		img.style.transition =  "all 1s ease-out"
 
 		console.log(scrolled)
-		img.style.top =  ""+ scrolled/40 + "px"
+		img.style.top =  "-"+ scrolled/40 + "px"
 
 	}
