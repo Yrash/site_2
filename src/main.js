@@ -226,6 +226,5 @@ window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     var img = document.getElementsByClassName("practis_area_paralax")[0];
     img.style.transition = "all 1s ease-out";
-    console.log(scrolled);
     img.style.top = "-" + scrolled / 40 + "px";
 };
